@@ -6,23 +6,28 @@ import org.apache.camel.impl.DefaultCamelContext;
 
 public class OrderRouter {
 
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-		CamelContext context = new DefaultCamelContext();
-		context.addRoutes( new RouteBuilder() {  						// Anonymous Classes
-			
-			@Override
-			public void configure() throws Exception{
-				from("file:orders?delay=5s")
+        CamelContext context = new DefaultCamelContext();
+        context.addRoutes(new RouteBuilder() {
+
+            @Override
+            public void configure() throws Exception {
+                from("file:orders?delay=5s&noop=true")
+                
 				.log("Message ${id}")
+				.log("${body}")
+				
+				
+				.marshal().xmljson()
+				.log("${body}")
 				.to("file:exit");
-				
-				
-			}
-		});
-		
-		context.start();
-		Thread.sleep(0);
-		context.stop();
-	}
+
+            }
+        });
+        context.start();
+        Thread.sleep(20000);
+        context.stop();
+    }
+
 }
