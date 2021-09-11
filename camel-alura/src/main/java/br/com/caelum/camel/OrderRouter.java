@@ -20,6 +20,7 @@ public class OrderRouter {
 				
 				
 				.marshal().xmljson()
+				.setHeader("CamelFileName", simple("${file:name.noext}.json"))
 				.log("${body}")
 				.to("file:exit");
 
