@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<pedido>
+<order>
     <id>4298608</id>
     <dataCompra>2013-12-05T18:10:07.963-02:00</dataCompra>
-    <itens>
+    <items>
          <item>
-            <formato>IMPRESSO</formato>
-            <quantidade>1</quantidade>
-            <livro>
-                <codigo>TDD</codigo>
-                <titulo>Test-Driven Development: Teste e Design no Mundo Real</titulo>
-                <tituloCurto>TDD</tituloCurto>
-                <nomeAutor>Mauricio Aniche</nomeAutor>
-                <valorEbook>29.90</valorEbook>
-                <valorImpresso>59.90</valorImpresso>
-            </livro>
+            <format>IMPRESSO</format>
+            <quantity>1</quantity>
+            <book>
+                 <code>TDD</code>
+                 <title>Test-Driven Development: Testing and Design in the Real World</title>
+                 <shortTitle>TDD</shortTitle>
+                 <authorName>Mauricio Aniche</authorName>
+                 <ebookValue>29.90</ebookValue>
+                 <printValue>59.90</printValue>
+             </book>
         </item>
         <item>
-            <formato>EBOOK</formato>
-            <quantidade>1</quantidade>
-            <livro>
-                <codigo>ARQ</codigo>
-                <titulo>Introdução à Arquitetura e Design de Software</titulo>
-                <tituloCurto>Arquitetura Java</tituloCurto>
-                <nomeAutor>Sergio Lopes, Paulo Silveira, Guilherme Silveira, Nico Steppat, outros</nomeAutor>
-                <valorEbook>29.90</valorEbook>
-                <valorImpresso>79.90</valorImpresso>
-            </livro>
+            <format>EBOOK</format>
+            <quantity>1</quantity>
+            <book>
+                 <code>ARCH</code>
+                 <title>Introduction to Software Architecture and Design</title>
+                 <shortTitle>Java Architecture</shortTitle>
+                 <authorName>Sergio Lopes, Paulo Silveira, Guilherme Silveira, Nico Steppat, others</authorName>
+                 <ebookValue>29.90</ebookValue>
+                 <PrintValue>79.90</PrintValue>
+             </book>
         </item>
-    </itens>
-    <pagamento>
-        <status>CONFIRMADO</status>
-        <valor>89.80</valor>
-        <titular>Tatiana Geraldina Granjeiro</titular>
-        <email-titular>tatgran@zxc.com</email-titular>
-    </pagamento>
-</pedido>
+    </items>
+    <payment>
+         <status>CONFIRMED</status>
+         <value>89.80</value>
+         <holder>Tatiana Geraldina Granjeiro</holder>
+         <email-owner>tatgran@zxc.com</email-owner>
+     </payment>
+</order>
