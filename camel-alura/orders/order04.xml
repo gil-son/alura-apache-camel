@@ -12,13 +12,13 @@
                  <shortTitle>SOA</shortTitle>
                  <authorName>Alexandre Saudate</authorName>
                  <ebookValue>29.90</ebookValue>
-                 <PrintValue>59.90</PrintValue>
+                 <printValue>59.90</printValue>
              </book>
         </item>
      </items>
-    <pagamento>
-        <valor>59.90</valor>
-        <titular>Edgar Milho</titular>
-        <email-titular>milhol@mnb.com</email-titular>
-    </pagamento>
+    <payment>
+         <value>59.90</value>
+         <holder>Edgar Maize</holder>
+         <email-holder>milhol@mnb.com</email-holder>
+     </payment>
 </order>

@@ -14,9 +14,15 @@ public class OrderRouter {
             @Override
             public void configure() throws Exception {
                 from("file:orders?delay=5s&noop=true")
-                
-				.log("Message ${id}")
-				.log("${body}")
+                	.split()
+                		.xpath("/order/items/item").log("${body}") 
+                	.filter()
+                		.xpath("/item/format[text()='EBOOK']")
+				.log("Message ${id}")  // .log("${body}")
+				
+				
+				
+				
 				
 				
 				.marshal().xmljson()
