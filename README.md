@@ -2,6 +2,17 @@
 Project developed in the Alura course
 
 
+
+### Diagram
+
+<div align="center"><img src="https://thumbs2.imgbox.com/51/9f/1I8JVRzw_t.png" /></div>
+
+<br/>
+<br/>
+
+
+
+
 <hr>
 
 

@@ -15,14 +15,10 @@ public class OrderRouter {
             public void configure() throws Exception {
                 from("file:orders?delay=5s&noop=true")
                 	.split()
-                		.xpath("/order/items/item").log("${body}") 
+                		.xpath("/order/items/item")//.log("${body}") 
                 	.filter()
                 		.xpath("/item/format[text()='EBOOK']")
 				.log("Message ${id}")  // .log("${body}")
-				
-				
-				
-				
 				
 				
 				.marshal().xmljson()
