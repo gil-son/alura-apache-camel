@@ -16,7 +16,7 @@ Project developed in the Alura course
 <hr>
 
 
-### Source
+### Sources
 
 <ul>
  <li>
